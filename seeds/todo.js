@@ -17,9 +17,9 @@ exports.seed = function(knex, Promise) {
         date: new Date()
       }, {
         title: 'Walk the dog',
-        priority: 1,
+        priority: 5,
         date: new Date()
-      }],
+      }];
 
       return knex('todo').insert(todos);
     });
