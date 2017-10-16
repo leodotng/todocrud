@@ -2,7 +2,6 @@
 exports.seed = function(knex, Promise) {
   return knex('todo').del()
     .then(function () {
-      // Inserts seed entries
       const todos = [{
         title: 'Build a CRUD App',
         priority: 1,
